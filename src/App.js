@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Profil from './Profil/profil';
+
+
+//const alt = alert('Adama Niang')
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return (
+    <>
+        <div>
+          <Profil FullName="Adama Niang" Bio="Mauritanian, student in Gomycode" Profession="Front-end Devlopper"/>
+        </div>
+    </>
+)
 }
 
 export default App;
