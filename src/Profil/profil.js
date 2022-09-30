@@ -2,10 +2,20 @@
 import Img from './handleName.js';
 import PropTypes from "prop-types";
 
+
+
 const Profil = ({FullName,Bio,Profession}) =>{
+
+    
+    let HandleName = () => {
+        alert(FullName);}
+        HandleName()
+
+
     const Img=(props)=>{
         return(
            <div>
+             
                {props.children}
            </div>
         )
@@ -13,6 +23,7 @@ const Profil = ({FullName,Bio,Profession}) =>{
       
     return(
         <>
+        
         <div style={{textAlign:"center", backgroundColor:"grey"}}>
         <div>
             <Img><img src="imgp.webp" alt="img-profil" srcset="" style={{height:"160px"}}/></Img>
